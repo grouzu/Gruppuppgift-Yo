@@ -7,6 +7,10 @@ Version: 1.0
   width: 100%;
 }
 
+.container--4 {
+  grid-column: span 4;
+}
+
 /*COLORS*/
 /*Colors SASS file*/
 /*! MIXIN  */
