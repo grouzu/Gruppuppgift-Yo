@@ -3,13 +3,11 @@ Name: Google News SASS
 Version: 1.0
 */
 
-@import "our-story.scss";
 @import "colors.scss"; /*Colors SASS file*/
 @import "mixin.scss"; /*Mixin SASS file*/
 @import "fonts.scss"; /*Fonts SASS file*/
 @import "header.scss"; /*Header SASS file*/
 @import "articles.scss"; /*Articles SASS file*/
-@import "footer.scss"; /*Footer SASS file*/
 
 html {
   width: 100%;
@@ -52,40 +50,39 @@ body {
 	}
 }
 
-
-/* Tablet view */
-<<<<<<< HEAD
-@media (min-width: 768px) { /* 768px is a common breakpoint for tablets */
-=======
-@media (min-width: 48rem) { /* Adjust breakpoint as needed */
->>>>>>> OurTeam
-    .team-card {
-        grid-column: span 4;
-    }
-}
-
-/* Desktop view */
-<<<<<<< HEAD
-@media (min-width: 1024px) { /* 1024px is a common breakpoint for desktops */
-=======
-@media (min-width: 64rem) { /* Adjust breakpoint as needed */
->>>>>>> OurTeam
-    .team-card {
-        grid-column: span 2;
-    }
-}
-
-
-<<<<<<< HEAD
-
-=======
->>>>>>> OurTeam
 #content {
   width: 100%;
   margin: 0 auto;
   display: block;
   overflow: hidden;
 }
+
+.twelve-column-grid {
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+	gap: 1rem;
+  }
+
+  .team-card {
+	grid-column: span 2;
+  }
+
+  @media (max-width: 768px) {
+	.team-card {
+	  grid-column: span 4;
+	}
+  }
+  
+
+  @media (max-width: 480px) {
+	.team-card {
+	  grid-column: span 6;
+	}
+	
+	.team-card .image-item {
+	  grid-column: span 3;
+	}
+  }
 
 /*------FOOTER-----*/
 

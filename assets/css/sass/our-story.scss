@@ -1,19 +1,15 @@
 .twelve-column-grid {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-<<<<<<< HEAD
-    gap: 16px; /* Adjust the gap as needed */
-=======
-    gap: 1rem; /* Adjust the gap as needed */
->>>>>>> OurTeam
+    gap: 16px;
+    gap: 1rem;
 }
 
 .team-card {
-    /* Default for mobile */
     grid-column: span 6;
 }
 
 .image-item img {
-    width: 100%; /* Ensure images are responsive within their containers */
+    width: 100%;
     height: auto;
 }
