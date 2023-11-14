@@ -1,2 +1,19 @@
+<<<<<<< HEAD
 footer {
     display: flex;
+=======
+footer {
+    display: grid;
+    column-gap: 50px;
+}
+
+.grid-2-column {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+
+.grid-3-column {
+    grid-column-start: 1;
+    grid-column-end: 4;
+  }
+>>>>>>> 4640eef5429ae42f9cb7f27b764f23e7f1a33589
