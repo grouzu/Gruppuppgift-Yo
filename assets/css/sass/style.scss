@@ -54,7 +54,7 @@ body {
 .twelve-column-grid {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    gap: 1rem; /* Adjust the gap as needed */
+    gap: 16px; /* Adjust the gap as needed */
 }
 
 .team-card {
@@ -68,18 +68,19 @@ body {
 }
 
 /* Tablet view */
-@media (min-width: 48rem) { /* Adjust breakpoint as needed */
+@media (min-width: 768px) { /* 768px is a common breakpoint for tablets */
     .team-card {
         grid-column: span 4;
     }
 }
 
 /* Desktop view */
-@media (min-width: 64rem) { /* Adjust breakpoint as needed */
+@media (min-width: 1024px) { /* 1024px is a common breakpoint for desktops */
     .team-card {
         grid-column: span 2;
     }
 }
+
 
 
 #content {
