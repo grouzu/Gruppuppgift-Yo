@@ -498,6 +498,21 @@ article#article.show .info .date-author {
 }
 
 /*Articles SASS file*/
+footer {
+  display: grid;
+  column-gap: 50px;
+}
+
+.grid-2-column {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.grid-3-column {
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
+
 /*Footer SASS file*/
 html {
   width: 100%;
