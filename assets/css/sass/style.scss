@@ -54,7 +54,11 @@ body {
 .twelve-column-grid {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
+<<<<<<< HEAD
     gap: 16px; /* Adjust the gap as needed */
+=======
+    gap: 1rem; /* Adjust the gap as needed */
+>>>>>>> OurTeam
 }
 
 .team-card {
@@ -68,21 +72,32 @@ body {
 }
 
 /* Tablet view */
+<<<<<<< HEAD
 @media (min-width: 768px) { /* 768px is a common breakpoint for tablets */
+=======
+@media (min-width: 48rem) { /* Adjust breakpoint as needed */
+>>>>>>> OurTeam
     .team-card {
         grid-column: span 4;
     }
 }
 
 /* Desktop view */
+<<<<<<< HEAD
 @media (min-width: 1024px) { /* 1024px is a common breakpoint for desktops */
+=======
+@media (min-width: 64rem) { /* Adjust breakpoint as needed */
+>>>>>>> OurTeam
     .team-card {
         grid-column: span 2;
     }
 }
 
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> OurTeam
 #content {
   width: 100%;
   margin: 0 auto;
