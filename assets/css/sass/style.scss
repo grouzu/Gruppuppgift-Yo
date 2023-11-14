@@ -51,6 +51,37 @@ body {
 	}
 }
 
+.twelve-column-grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 1rem; /* Adjust the gap as needed */
+}
+
+.team-card {
+    /* Default for mobile */
+    grid-column: span 6;
+}
+
+.image-item img {
+    width: 100%; /* Ensure images are responsive within their containers */
+    height: auto;
+}
+
+/* Tablet view */
+@media (min-width: 48rem) { /* Adjust breakpoint as needed */
+    .team-card {
+        grid-column: span 4;
+    }
+}
+
+/* Desktop view */
+@media (min-width: 64rem) { /* Adjust breakpoint as needed */
+    .team-card {
+        grid-column: span 2;
+    }
+}
+
+
 #content {
   width: 100%;
   margin: 0 auto;
