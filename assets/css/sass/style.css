@@ -28,6 +28,11 @@ Version: 1.0
     grid-column: span 3;
   }
 }
+.our-team {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
 /*COLORS*/
 /*Colors SASS file*/
 /*! MIXIN  */
@@ -135,6 +140,10 @@ li {
   margin-top: 5px;
 }
 
+.small {
+  font-size: 0.75rem;
+}
+
 h1 {
   font-family: "Open Sans", sans-serif;
   font-weight: bold;
@@ -168,6 +177,17 @@ a {
 a:hover, a:active, a:visited {
   color: #16315e;
   text-decoration: none;
+}
+
+.bold {
+  font-family: "Playfair Display", serif;
+  font-weight: 800;
+  margin-bottom: -0.75rem;
+}
+
+.h2-bold {
+  font-family: "Playfair Display", serif;
+  font-weight: 800;
 }
 
 /*Fonts SASS file*/
@@ -581,7 +601,8 @@ body {
   html.touch *:hover {
     pointer-events: none !important;
   }
-  html, body {
+  html,
+  body {
     width: 100% !important;
     margin: 0px !important;
     overflow-x: hidden !important;
@@ -603,6 +624,14 @@ body {
 /*------FOOTER-----*/
 #footer {
   width: 100%;
+}
+
+.header-img {
+  width: 100%;
+}
+
+.container--4 {
+  grid-column: span 4;
 }
 
 /*# sourceMappingURL=style.css.map */
