@@ -1,7 +1,8 @@
 .twelve-column-grid {
 	display: grid;
 	grid-template-columns: repeat(12, 1fr);
-	gap: 1rem;
+	gap: 3rem;
+	row-gap: 3rem;
   }
 
   .team-card {
