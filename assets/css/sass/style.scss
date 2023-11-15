@@ -68,3 +68,7 @@ body {
 .header-img {
   width: 100%;
 }
+
+.container--4 {
+  grid-column: span 4;
+}

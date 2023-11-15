@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
     <title>Google News</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <!--Stylesheets-->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700|Playfair+Display:400,700" rel="stylesheet">
-    <link rel="stylesheet" href="./assets/css/reset.css" type="text/css">
-    <link rel="stylesheet" href="./assets/css/sass/style.css" type="text/css">
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700|Playfair+Display:400,700"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/css/reset.css" type="text/css" />
+    <link rel="stylesheet" href="./assets/css/sass/style.css" type="text/css" />
   </head>
   <body>
     <section role="main" id="wrapper">
@@ -19,7 +22,7 @@
           <ul>
             <li>
               <a href="/Offerings">What we do</a>
-            </li> 
+            </li>
             <li>
               <a href="/About-us">Who we are</a>
             </li>
@@ -39,7 +42,13 @@
               <a href="/Contact">Contact</a>
             </li>
             <li class="search">
-              <input type="text" id="searchInput" onkeyup="searchFunction()" placeholder="Search titles" title="Type in title search term">
+              <input
+                type="text"
+                id="searchInput"
+                onkeyup="searchFunction()"
+                placeholder="Search titles"
+                title="Type in title search term"
+              />
             </li>
             <li class="icon">
               <a href="javascript:void(0);" onclick="menuFunction()">&#9776;</a>
@@ -53,14 +62,18 @@
       <footer class="grid-12">
         <div class="container-2">
           <h2>About Us</h2>
-          <p>What we do</p> <!--make link-->
-          <p>Who we are</p> <!--make link-->
+          <p>What we do</p>
+          <!--make link-->
+          <p>Who we are</p>
+          <!--make link-->
         </div>
 
         <div class="container-2">
           <h2>About You</h2>
-          <p>Customers</p> <!--make link-->
-          <p>Latest</p> <!--make link-->
+          <p>Customers</p>
+          <!--make link-->
+          <p>Latest</p>
+          <!--make link-->
         </div>
 
         <div class="container-3">
@@ -72,14 +85,26 @@
         <div class="container-4">
           <p>Copyright 2022 Google News</p>
         </div>
-
       </footer>
     </section>
-    
-            <!--Wather widget-->
-            <script> !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');</script>
-            <!--JS Scripts-->
-            <script type="text/javascript" src="./assets/js/menu.js"></script> <!--Mobile menu JS-->
-            <script type="text/javascript" src="./assets/js/request.js"></script> <!--JSON API request JS-->
+
+    <!--Wather widget-->
+    <script>
+      !(function (d, s, id) {
+        var js,
+          fjs = d.getElementsByTagName(s)[0];
+        if (!d.getElementById(id)) {
+          js = d.createElement(s);
+          js.id = id;
+          js.src = "https://weatherwidget.io/js/widget.min.js";
+          fjs.parentNode.insertBefore(js, fjs);
+        }
+      })(document, "script", "weatherwidget-io-js");
+    </script>
+    <!--JS Scripts-->
+    <script type="text/javascript" src="./assets/js/menu.js"></script>
+    <!--Mobile menu JS-->
+    <script type="text/javascript" src="./assets/js/request.js"></script>
+    <!--JSON API request JS-->
   </body>
 </html>
