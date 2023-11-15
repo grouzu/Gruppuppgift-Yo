@@ -498,6 +498,25 @@ article#article.show .info .date-author {
 }
 
 /*Articles SASS file*/
+.footer {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+.container-2 {
+  grid-column: span 2;
+}
+
+.container-3 {
+  grid-column: span 3;
+}
+
+.container-4 {
+  grid-column: 10/span 3; /* Start from column 10 and span 3 columns */
+  text-align: right;
+}
+
+/*Footer SASS file*/
 html {
   width: 100%;
   margin: 0;
