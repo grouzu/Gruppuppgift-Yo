@@ -72,3 +72,34 @@ body {
 .container--4 {
   grid-column: span 4;
 }
+
+
+/*Get in touch section*/
+.get-in-touch {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  padding: 10px;
+}
+
+.get-in-touch h2{
+    padding-bottom: 15px;
+    font-weight: 700;
+  }
+
+.get-in-touch p {
+    margin: 2% 0% 2% 0%;
+  }
+
+.inquiries {
+  grid-column: span 3;
+}
+
+.business-careers {
+  grid-column: span 3;
+}
+
+.socialmedia-icons {
+   grid-column: 10 / span 3; /* Start from column 10 and span 3 columns */
+   text-align: right;
+   grid-row: 1;
+  }
