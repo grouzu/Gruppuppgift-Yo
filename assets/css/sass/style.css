@@ -170,6 +170,10 @@ a:hover, a:active, a:visited {
   text-decoration: none;
 }
 
+.bold {
+  font-weight: 800;
+}
+
 /*Fonts SASS file*/
 /*! HEADER STYLES */
 #header {
