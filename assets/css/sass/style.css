@@ -140,6 +140,10 @@ li {
   margin-top: 5px;
 }
 
+.small {
+  font-size: 0.75rem;
+}
+
 h1 {
   font-family: "Open Sans", sans-serif;
   font-weight: bold;
@@ -176,6 +180,13 @@ a:hover, a:active, a:visited {
 }
 
 .bold {
+  font-family: "Playfair Display", serif;
+  font-weight: 800;
+  margin-bottom: -0.75rem;
+}
+
+.h2-bold {
+  font-family: "Playfair Display", serif;
   font-weight: 800;
 }
 
