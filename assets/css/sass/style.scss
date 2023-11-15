@@ -3,20 +3,12 @@ Name: Google News SASS
 Version: 1.0
 */
 
-.header-img {
-  width: 100%;
-}
-
-.container--4 {
-  grid-column: span 4;
-}
-
+@import "our-story.scss";
 @import "colors.scss"; /*Colors SASS file*/
 @import "mixin.scss"; /*Mixin SASS file*/
 @import "fonts.scss"; /*Fonts SASS file*/
 @import "header.scss"; /*Header SASS file*/
 @import "articles.scss"; /*Articles SASS file*/
-@import "footer.scss"; /*Footer SASS file*/
 
 html {
   width: 100%;
@@ -65,6 +57,8 @@ body {
   display: block;
   overflow: hidden;
 }
+
+
 
 /*------FOOTER-----*/
 
