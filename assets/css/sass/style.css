@@ -568,7 +568,7 @@ article#article.show .info .date-author {
 }
 
 .container-4 {
-  grid-column: 10/span 3; /* Start from column 10 and span 3 columns */
+  grid-column: 10 / span 3; /* Start from column 10 and span 3 columns */
   text-align: right;
 }
 
@@ -620,11 +620,6 @@ body {
 /*------FOOTER-----*/
 #footer {
   width: 100%;
-}
-
-.header-img {
-  width: 100%;
-  height: auto;
 }
 
 /*# sourceMappingURL=style.css.map */
