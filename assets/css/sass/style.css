@@ -498,7 +498,7 @@ article#article.show .info .date-author {
 }
 
 /*Articles SASS file*/
-.footer {
+.grid-12 {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
 }
