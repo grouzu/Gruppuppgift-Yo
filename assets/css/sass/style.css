@@ -629,7 +629,8 @@ main {
 .get-in-touch {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  padding: 10px;
+  margin: 20px 0px 20px 0px;
+  padding: 0px;
 }
 
 .get-in-touch h2 {
