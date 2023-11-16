@@ -15,6 +15,11 @@ Version: 1.0
   grid-column: span 2;
 }
 
+@media (max-width: 1200px) {
+  .team-card {
+    grid-column: span 3;
+  }
+}
 @media (max-width: 768px) {
   .team-card {
     grid-column: span 4;
@@ -28,6 +33,10 @@ Version: 1.0
     grid-column: span 3;
   }
 }
+.image-item img {
+  min-width: 100%;
+}
+
 .our-team {
   padding-top: 4rem;
   padding-bottom: 4rem;
@@ -221,10 +230,12 @@ a:hover, a:active, a:visited {
   line-height: 40px;
   line-height: 2.5rem;
   margin-bottom: 5px;
+  margin-left: 5%;
 }
 #header nav#menu {
   display: block;
-  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
   border-bottom: 1px solid #CCC;
   border-top: 1px solid #CCC;
   padding-left: 5%;
@@ -544,7 +555,8 @@ article#article.show .info .date-author {
 
 /*Articles SASS file*/
 footer {
-  margin: 5% 0% 5% 0%;
+  margin-top: 50px;
+  border-top: 1px solid #CCC;
 }
 footer h2 {
   padding-bottom: 15px;
@@ -560,7 +572,8 @@ footer a {
 .grid-12 {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  padding: 10px;
+  padding: 50px 10px 50px 10px;
+  margin: 0% 5% 0% 5%;
 }
 
 .container-2 {
@@ -577,6 +590,10 @@ footer a {
 }
 
 /*Footer SASS file*/
+.our-story {
+  padding-top: 2rem;
+}
+
 html {
   width: 100%;
   margin: 0;
@@ -584,7 +601,6 @@ html {
 }
 
 body {
-  width: 90%;
   overflow-x: hidden;
   display: block;
   clear: both;
@@ -594,6 +610,11 @@ body {
   font-family: "Playfair Display", serif;
   font-size: 13pt;
   color: black;
+}
+
+main {
+  margin-left: 5%;
+  margin-right: 5%;
 }
 
 @media screen and (max-width: 1024px) {
@@ -626,8 +647,16 @@ body {
   width: 100%;
 }
 
-.header-img {
+.hero-section img {
   width: 100%;
+}
+
+.grid-12-whoweare {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 107px;
 }
 
 .container--4 {
