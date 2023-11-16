@@ -168,11 +168,10 @@ a:hover, a:active, a:visited {
   overflow: hidden;
   background: white;
   display: block;
-  margin-left: -5%;
-  padding-top: 10px;
-  /*Breakpoint for when menu can't fit the screen anymore*/
-  /*#header h1*/
-  /*Close nav#menu*/
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Can't find stylesheet to import.\a   \2577 \a 6 \2502  @import \"our-story.scss\";\a   \2502          ^^^^^^^^^^^^^^^^\a   \2575 \a   style.scss 6:9  root stylesheet";
 }
 @media screen and (max-width: 1190px) {
   #header {
