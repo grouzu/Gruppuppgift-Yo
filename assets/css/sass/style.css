@@ -617,6 +617,7 @@ main {
 .grid-12-whoweare {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
+  padding-top: 30px;
   padding-bottom: 30px;
   padding-left: 0%;
 }
@@ -629,7 +630,7 @@ main {
 .get-in-touch {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  margin: 20px 0px 20px 0px;
+  padding: 10px;
 }
 
 .get-in-touch h2 {
