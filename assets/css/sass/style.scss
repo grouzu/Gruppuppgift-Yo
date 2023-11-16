@@ -65,8 +65,19 @@ body {
   width: 100%;
 }
 
-.header-img {
+.hero-section {
+  width: 110%;
+}
+.hero-section img {
   width: 100%;
+}
+
+.grid-12-whoweare {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 107px;
 }
 
 .container--4 {
