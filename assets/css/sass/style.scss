@@ -3,13 +3,14 @@ Name: Google News SASS
 Version: 1.0
 */
 
-@import "our-story.scss";
+@import "meet-the-team.scss";
 @import "colors.scss"; /*Colors SASS file*/
 @import "mixin.scss"; /*Mixin SASS file*/
 @import "fonts.scss"; /*Fonts SASS file*/
 @import "header.scss"; /*Header SASS file*/
 @import "articles.scss"; /*Articles SASS file*/
 @import "footer.scss"; /*Footer SASS file*/
+@import "our-story";
 
 html {
   width: 100%;
@@ -18,7 +19,6 @@ html {
 }
 
 body {
-  width: 90%;
   overflow-x: hidden;
   display: block;
   clear: both;
@@ -28,6 +28,11 @@ body {
   font-family: $primary-font;
   font-size: 13pt;
   color: black;
+}
+
+main {
+  margin-left: 5%;
+  margin-right: 5%;
 }
 
 @media screen and (max-width: 1024px) {
@@ -65,10 +70,7 @@ body {
   width: 100%;
 }
 
-.hero-section {
-  width: 110%;
-  margin-left: -5%;
-}
+
 .hero-section img {
   width: 100%;
 }
@@ -83,4 +85,34 @@ body {
 
 .container--4 {
   grid-column: span 4;
+}
+
+/*Get in touch section*/
+.get-in-touch {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  padding: 10px;
+}
+
+.get-in-touch h2 {
+  padding-bottom: 15px;
+  font-weight: 700;
+}
+
+.get-in-touch p {
+  margin: 2% 0% 2% 0%;
+}
+
+.inquiries {
+  grid-column: span 3;
+}
+
+.business-careers {
+  grid-column: span 3;
+}
+
+.socialmedia-icons {
+  grid-column: 10 / span 3; /* Start from column 10 and span 3 columns */
+  text-align: right;
+  grid-row: 1;
 }
