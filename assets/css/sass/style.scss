@@ -3,7 +3,6 @@ Name: Google News SASS
 Version: 1.0
 */
 
-@import "meet-the-team.scss";
 @import "colors.scss"; /*Colors SASS file*/
 @import "mixin.scss"; /*Mixin SASS file*/
 @import "fonts.scss"; /*Fonts SASS file*/
@@ -70,7 +69,6 @@ main {
   width: 100%;
 }
 
-
 .hero-section img {
   width: 100%;
 }
@@ -78,9 +76,9 @@ main {
 .grid-12-whoweare {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  padding-top: 20px;
-  padding-bottom: 20px;
-  padding-left: 107px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 0%;
 }
 
 .container--4 {
