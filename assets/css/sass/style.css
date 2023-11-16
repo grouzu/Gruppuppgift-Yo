@@ -28,6 +28,10 @@ Version: 1.0
     grid-column: span 3;
   }
 }
+.image-item img {
+  min-width: 100%;
+}
+
 .our-team {
   padding-top: 4rem;
   padding-bottom: 4rem;
