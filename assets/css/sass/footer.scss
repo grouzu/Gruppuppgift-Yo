@@ -1,5 +1,7 @@
 footer {
+    margin-top: 50px;
     border-top: 1px solid $light-grey;
+
   
     h2 {
       padding-bottom: 15px;
@@ -18,8 +20,8 @@ footer {
 .grid-12 {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    padding: 30px 10px 10px 10px;
-    margin: 5% 0% 5% 0%;
+    padding: 50px 10px 50px 10px;
+    margin: 0% 5% 0% 5%;
   }
 
   .container-2 {
