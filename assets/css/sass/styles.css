@@ -15,11 +15,6 @@ Version: 1.0
   grid-column: span 2;
 }
 
-@media (max-width: 1200px) {
-  .team-card {
-    grid-column: span 3;
-  }
-}
 @media (max-width: 768px) {
   .team-card {
     grid-column: span 4;
@@ -33,15 +28,6 @@ Version: 1.0
     grid-column: span 3;
   }
 }
-.image-item img {
-  min-width: 100%;
-}
-
-.our-team {
-  padding-top: 4rem;
-  padding-bottom: 4rem;
-}
-
 /*COLORS*/
 /*Colors SASS file*/
 /*! MIXIN  */
@@ -149,10 +135,6 @@ li {
   margin-top: 5px;
 }
 
-.small {
-  font-size: 0.75rem;
-}
-
 h1 {
   font-family: "Open Sans", sans-serif;
   font-weight: bold;
@@ -186,17 +168,6 @@ a {
 a:hover, a:active, a:visited {
   color: #16315e;
   text-decoration: none;
-}
-
-.bold {
-  font-family: "Playfair Display", serif;
-  font-weight: 800;
-  margin-bottom: -0.75rem;
-}
-
-.h2-bold {
-  font-family: "Playfair Display", serif;
-  font-weight: 800;
 }
 
 /*Fonts SASS file*/
@@ -552,24 +523,9 @@ article#article.show .info .date-author {
 }
 
 /*Articles SASS file*/
-footer {
-  margin: 5% 0% 5% 0%;
-}
-footer h2 {
-  padding-bottom: 15px;
-  font-weight: 700;
-}
-footer p {
-  margin: 2% 0% 2% 0%;
-}
-footer a {
-  text-decoration: none;
-}
-
 .grid-12 {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  padding: 10px;
 }
 
 .container-2 {
@@ -643,34 +599,4 @@ body {
   grid-column: span 4;
 }
 
-/*Get in touch section*/
-.get-in-touch {
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  padding: 10px;
-}
-
-.get-in-touch h2 {
-  padding-bottom: 15px;
-  font-weight: 700;
-}
-
-.get-in-touch p {
-  margin: 2% 0% 2% 0%;
-}
-
-.inquiries {
-  grid-column: span 3;
-}
-
-.business-careers {
-  grid-column: span 3;
-}
-
-.socialmedia-icons {
-  grid-column: 10/span 3; /* Start from column 10 and span 3 columns */
-  text-align: right;
-  grid-row: 1;
-}
-
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=styles.css.map */
