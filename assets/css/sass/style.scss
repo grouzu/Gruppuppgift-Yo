@@ -68,7 +68,10 @@ body {
 
 .hero-section {
   width: 110%;
+  margin-left: -5.6%;
+  margin-right: -5%;
 }
+
 .hero-section img {
   width: 100%;
 }
@@ -85,7 +88,6 @@ body {
   grid-column: span 4;
 }
 
-
 /*Get in touch section*/
 .get-in-touch {
   display: grid;
@@ -93,14 +95,14 @@ body {
   padding: 10px;
 }
 
-.get-in-touch h2{
-    padding-bottom: 15px;
-    font-weight: 700;
-  }
+.get-in-touch h2 {
+  padding-bottom: 15px;
+  font-weight: 700;
+}
 
 .get-in-touch p {
-    margin: 2% 0% 2% 0%;
-  }
+  margin: 2% 0% 2% 0%;
+}
 
 .inquiries {
   grid-column: span 3;
@@ -111,7 +113,7 @@ body {
 }
 
 .socialmedia-icons {
-   grid-column: 10 / span 3; /* Start from column 10 and span 3 columns */
-   text-align: right;
-   grid-row: 1;
-  }
+  grid-column: 10 / span 3; /* Start from column 10 and span 3 columns */
+  text-align: right;
+  grid-row: 1;
+}
