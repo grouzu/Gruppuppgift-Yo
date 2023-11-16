@@ -587,6 +587,10 @@ footer a {
 }
 
 /*Footer SASS file*/
+.our-story {
+  padding-top: 2rem;
+}
+
 html {
   width: 100%;
   margin: 0;
