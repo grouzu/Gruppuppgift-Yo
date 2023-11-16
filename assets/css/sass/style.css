@@ -544,7 +544,7 @@ article#article.show .info .date-author {
 
 /*Articles SASS file*/
 footer {
-  margin: 5% 0% 5% 0%;
+  border-top: 1px solid #CCC;
 }
 footer h2 {
   padding-bottom: 15px;
@@ -560,7 +560,8 @@ footer a {
 .grid-12 {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  padding: 10px;
+  padding: 30px 10px 10px 10px;
+  margin: 5% 0% 5% 0%;
 }
 
 .container-2 {
