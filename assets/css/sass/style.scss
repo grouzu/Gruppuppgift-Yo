@@ -19,7 +19,6 @@ html {
 }
 
 body {
-  width: 90%;
   overflow-x: hidden;
   display: block;
   clear: both;
@@ -29,6 +28,11 @@ body {
   font-family: $primary-font;
   font-size: 13pt;
   color: black;
+}
+
+main {
+  margin-left: 5%;
+  margin-right: 5%;
 }
 
 @media screen and (max-width: 1024px) {
@@ -66,11 +70,6 @@ body {
   width: 100%;
 }
 
-.hero-section {
-  width: 110%;
-  margin-left: -5.6%;
-  margin-right: -5%;
-}
 
 .hero-section img {
   width: 100%;
