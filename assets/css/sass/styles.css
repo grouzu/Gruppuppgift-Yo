@@ -3,6 +3,31 @@
 Name: Google News SASS
 Version: 1.0
 */
+.twelve-column-grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 3rem;
+  row-gap: 3rem;
+  padding-top: 2rem;
+}
+
+.team-card {
+  grid-column: span 2;
+}
+
+@media (max-width: 768px) {
+  .team-card {
+    grid-column: span 4;
+  }
+}
+@media (max-width: 480px) {
+  .team-card {
+    grid-column: span 6;
+  }
+  .team-card .image-item {
+    grid-column: span 3;
+  }
+}
 /*COLORS*/
 /*Colors SASS file*/
 /*! MIXIN  */
@@ -110,10 +135,6 @@ li {
   margin-top: 5px;
 }
 
-.small {
-  font-size: 0.75rem;
-}
-
 h1 {
   font-family: "Open Sans", sans-serif;
   font-weight: bold;
@@ -149,17 +170,6 @@ a:hover, a:active, a:visited {
   text-decoration: none;
 }
 
-.bold {
-  font-family: "Playfair Display", serif;
-  font-weight: 800;
-  margin-bottom: -0.75rem;
-}
-
-.h2-bold {
-  font-family: "Playfair Display", serif;
-  font-weight: 800;
-}
-
 /*Fonts SASS file*/
 /*! HEADER STYLES */
 #header {
@@ -170,11 +180,6 @@ a:hover, a:active, a:visited {
   display: block;
   margin-left: -5%;
   padding-top: 10px;
-  position: fixed;
-  top: 0;
-  z-index: 1000;
-  transition: background-color 0.3s ease;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
   /*Breakpoint for when menu can't fit the screen anymore*/
   /*#header h1*/
   /*Close nav#menu*/
@@ -196,12 +201,10 @@ a:hover, a:active, a:visited {
   line-height: 40px;
   line-height: 2.5rem;
   margin-bottom: 5px;
-  margin-left: 5%;
 }
 #header nav#menu {
   display: block;
-  margin-left: 5%;
-  margin-right: 5%;
+  width: 90%;
   border-bottom: 1px solid #CCC;
   border-top: 1px solid #CCC;
   padding-left: 5%;
@@ -281,7 +284,7 @@ a:hover, a:active, a:visited {
   display: none;
 }
 #header nav#menu ul li.search input#searchInput {
-  background-image: url("/assets/searchicon.png");
+  background-image: url("../searchicon.png");
   background-position: 7px 10px;
   background-repeat: no-repeat;
   width: 160px;
@@ -324,12 +327,6 @@ a:hover, a:active, a:visited {
 }
 
 /*Close #header*/
-#header.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
-}
-
 /*Header SASS file*/
 /*! ARTICLE STYLES */
 article#article {
@@ -526,26 +523,9 @@ article#article.show .info .date-author {
 }
 
 /*Articles SASS file*/
-footer {
-  margin-top: 50px;
-  border-top: 1px solid #CCC;
-}
-footer h2 {
-  padding-bottom: 15px;
-  font-weight: 700;
-}
-footer p {
-  margin: 2% 0% 2% 0%;
-}
-footer a {
-  text-decoration: none;
-}
-
 .grid-12 {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  padding: 50px 10px 50px 10px;
-  margin: 0% 5% 0% 5%;
 }
 
 .container-2 {
@@ -569,20 +549,16 @@ html {
 }
 
 body {
+  width: 90%;
   overflow-x: hidden;
   display: block;
   clear: both;
-  padding: 130px 0px 0px 0px;
+  padding: 0;
   margin: 0px auto;
   box-sizing: border-box;
   font-family: "Playfair Display", serif;
   font-size: 13pt;
   color: black;
-}
-
-main {
-  margin-left: 5%;
-  margin-right: 5%;
 }
 
 @media screen and (max-width: 1024px) {
@@ -615,51 +591,12 @@ main {
   width: 100%;
 }
 
-.hero-section img {
+.header-img {
   width: 100%;
-  margin-bottom: 40px;
-}
-
-.grid-12-whoweare {
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  padding-bottom: 30px;
-  padding-left: 0%;
 }
 
 .container--4 {
   grid-column: span 4;
 }
 
-/*Get in touch section*/
-.get-in-touch {
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  margin: 20px 0px 20px 0px;
-  padding: 0px;
-}
-
-.get-in-touch h2 {
-  padding-bottom: 15px;
-  font-weight: 700;
-}
-
-.get-in-touch p {
-  margin: 2% 0% 2% 0%;
-}
-
-.inquiries {
-  grid-column: span 3;
-}
-
-.business-careers {
-  grid-column: span 3;
-}
-
-.socialmedia-icons {
-  grid-column: 10/span 3; /* Start from column 10 and span 3 columns */
-  text-align: right;
-  grid-row: 1;
-}
-
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=styles.css.map */
