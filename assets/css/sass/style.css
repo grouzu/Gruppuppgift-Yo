@@ -168,7 +168,7 @@ a:hover, a:active, a:visited {
   overflow: hidden;
   background: white;
   display: block;
-  margin-left: -5%;
+  margin-left: -5.5%;
   padding-top: 10px;
   position: fixed;
   top: 0;
@@ -615,11 +615,14 @@ main {
   width: 100%;
 }
 
+/*------FOOTER-----*/
+/*------HERO-----*/
 .hero-section img {
   width: 100%;
   margin-bottom: 40px;
 }
 
+/*------HERO-----*/
 .grid-12-whoweare {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
@@ -631,7 +634,16 @@ main {
   grid-column: span 4;
 }
 
+.our-story {
+  padding-top: 50px;
+  padding-bottom: 20px;
+}
+
 /*Get in touch section*/
+.Heading-get-in-touch {
+  padding-bottom: 15px;
+}
+
 .get-in-touch {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
@@ -640,7 +652,7 @@ main {
 }
 
 .get-in-touch h2 {
-  padding-bottom: 15px;
+  padding-bottom: 20px;
   font-weight: 700;
 }
 
@@ -661,5 +673,57 @@ main {
   text-align: right;
   grid-row: 1;
 }
+
+/* Meet the team */
+.twelve-column-grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  row-gap: 3rem;
+  padding-top: 2rem;
+  column-gap: 2rem;
+}
+
+.team-card {
+  grid-column: span 2;
+}
+
+@media (max-width: 1200px) {
+  .team-card {
+    grid-column: span 3;
+  }
+}
+@media (max-width: 768px) {
+  .team-card {
+    grid-column: span 4;
+  }
+}
+@media (max-width: 480px) {
+  .team-card {
+    grid-column: span 6;
+  }
+  .team-card .image-item {
+    grid-column: span 3;
+  }
+}
+.image-item img {
+  min-width: 100%;
+  max-width: 100%;
+}
+
+.our-team {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.border-line {
+  margin-left: -5.5%;
+  margin-right: -5.5%;
+  border: none; /* Remove border to ensure only one line is visible */
+  border-top: 1px solid #CCC; /* Set the top border as the line */
+  padding-bottom: 50px;
+}
+
+/* END Meet the team */
 
 /*# sourceMappingURL=style.css.map */
