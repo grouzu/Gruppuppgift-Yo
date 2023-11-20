@@ -3,14 +3,12 @@ Name: Google News SASS
 Version: 1.0
 */
 
-@import "meet-the-team.scss";
 @import "colors.scss"; /*Colors SASS file*/
 @import "mixin.scss"; /*Mixin SASS file*/
 @import "fonts.scss"; /*Fonts SASS file*/
 @import "header.scss"; /*Header SASS file*/
 @import "articles.scss"; /*Articles SASS file*/
 @import "footer.scss"; /*Footer SASS file*/
-@import "our-story";
 
 html {
   width: 100%;
@@ -22,7 +20,7 @@ body {
   overflow-x: hidden;
   display: block;
   clear: both;
-  padding: 0;
+  padding: 130px 0px 0px 0px;
   margin: 0px auto;
   box-sizing: border-box;
   font-family: $primary-font;
@@ -57,6 +55,11 @@ main {
   }
 }
 
+.map-image {
+	width: 100%;
+	padding-top: 30px;
+}
+
 #content {
   width: 100%;
   margin: 0 auto;
@@ -65,22 +68,25 @@ main {
 }
 
 /*------FOOTER-----*/
-
 #footer {
   width: 100%;
 }
+/*------FOOTER-----*/
 
 
+/*------HERO-----*/
 .hero-section img {
   width: 100%;
+  margin-bottom: 40px;
 }
+/*------HERO-----*/
+
 
 .grid-12-whoweare {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  padding-top: 20px;
-  padding-bottom: 20px;
-  padding-left: 107px;
+  padding-bottom: 30px;
+  padding-left: 0%;
 }
 
 .container--4 {
@@ -88,21 +94,32 @@ main {
 }
 
 
+.our-story {
+  padding-top: 50px;
+  padding-bottom: 20px;
+}
+
+
 /*Get in touch section*/
+.Heading-get-in-touch {
+  padding-bottom: 15px;
+}
+
 .get-in-touch {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  padding: 10px;
+  margin: 20px 0px 20px 0px;
+  padding: 0px;
 }
 
-.get-in-touch h2{
-    padding-bottom: 15px;
-    font-weight: 700;
-  }
+.get-in-touch h2 {
+  padding-bottom: 20px;
+  font-weight: 700;
+}
 
 .get-in-touch p {
-    margin: 2% 0% 2% 0%;
-  }
+  margin: 2% 0% 2% 0%;
+}
 
 .inquiries {
   grid-column: span 3;
@@ -113,7 +130,62 @@ main {
 }
 
 .socialmedia-icons {
-   grid-column: 10 / span 3; /* Start from column 10 and span 3 columns */
-   text-align: right;
-   grid-row: 1;
+  grid-column: 10 / span 3; /* Start from column 10 and span 3 columns */
+  text-align: right;
+  grid-row: 1;
+}
+
+/* Meet the team */
+.twelve-column-grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  row-gap: 3rem;
+  padding-top: 2rem;
+  column-gap: 2rem;
   }
+ 
+  .team-card {
+  grid-column: span 2;
+  }
+ 
+  @media (max-width: 1200px) {
+  .team-card {
+    grid-column: span 3;
+  }
+  }
+ 
+  @media (max-width: 768px) {
+  .team-card {
+    grid-column: span 4;
+  }
+  }
+ 
+  @media (max-width: 480px) {
+  .team-card {
+    grid-column: span 6;
+  }
+ 
+  .team-card .image-item {
+    grid-column: span 3;
+  }
+  }
+ 
+  .image-item img{
+  min-width: 100%;
+  max-width: 100%;
+  }
+ 
+  .our-team {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  }
+
+  .border-line {
+    margin-left: -5.5%;
+    margin-right: -5.5%;
+    border: none; /* Remove border to ensure only one line is visible */
+    border-top: 1px solid $light-grey; /* Set the top border as the line */
+    padding-bottom: 50px;
+  }
+  /* END Meet the team */

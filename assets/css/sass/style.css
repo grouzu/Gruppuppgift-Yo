@@ -208,8 +208,13 @@ a:hover, a:active, a:visited {
   overflow: hidden;
   background: white;
   display: block;
-  margin-left: -5%;
+  margin-left: -5.5%;
   padding-top: 10px;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  transition: background-color 0.3s ease;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
   /*Breakpoint for when menu can't fit the screen anymore*/
   /*#header h1*/
   /*Close nav#menu*/
@@ -316,7 +321,7 @@ a:hover, a:active, a:visited {
   display: none;
 }
 #header nav#menu ul li.search input#searchInput {
-  background-image: url("../searchicon.png");
+  background-image: url("/assets/searchicon.png");
   background-position: 7px 10px;
   background-repeat: no-repeat;
   width: 160px;
@@ -359,6 +364,12 @@ a:hover, a:active, a:visited {
 }
 
 /*Close #header*/
+#header.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
 /*Header SASS file*/
 /*! ARTICLE STYLES */
 article#article {
@@ -591,10 +602,6 @@ footer a {
 }
 
 /*Footer SASS file*/
-.our-story {
-  padding-top: 2rem;
-}
-
 html {
   width: 100%;
   margin: 0;
@@ -605,7 +612,7 @@ body {
   overflow-x: hidden;
   display: block;
   clear: both;
-  padding: 0;
+  padding: 130px 0px 0px 0px;
   margin: 0px auto;
   box-sizing: border-box;
   font-family: "Playfair Display", serif;
@@ -636,6 +643,11 @@ main {
     min-height: 100%;
   }
 }
+.map-image {
+  width: 100%;
+  padding-top: 30px;
+}
+
 #content {
   width: 100%;
   margin: 0 auto;
@@ -648,31 +660,44 @@ main {
   width: 100%;
 }
 
+/*------FOOTER-----*/
+/*------HERO-----*/
 .hero-section img {
   width: 100%;
+  margin-bottom: 40px;
 }
 
+/*------HERO-----*/
 .grid-12-whoweare {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  padding-top: 20px;
-  padding-bottom: 20px;
-  padding-left: 107px;
+  padding-bottom: 30px;
+  padding-left: 0%;
 }
 
 .container--4 {
   grid-column: span 4;
 }
 
+.our-story {
+  padding-top: 50px;
+  padding-bottom: 20px;
+}
+
 /*Get in touch section*/
+.Heading-get-in-touch {
+  padding-bottom: 15px;
+}
+
 .get-in-touch {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  padding: 10px;
+  margin: 20px 0px 20px 0px;
+  padding: 0px;
 }
 
 .get-in-touch h2 {
-  padding-bottom: 15px;
+  padding-bottom: 20px;
   font-weight: 700;
 }
 
@@ -693,5 +718,57 @@ main {
   text-align: right;
   grid-row: 1;
 }
+
+/* Meet the team */
+.twelve-column-grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  row-gap: 3rem;
+  padding-top: 2rem;
+  column-gap: 2rem;
+}
+
+.team-card {
+  grid-column: span 2;
+}
+
+@media (max-width: 1200px) {
+  .team-card {
+    grid-column: span 3;
+  }
+}
+@media (max-width: 768px) {
+  .team-card {
+    grid-column: span 4;
+  }
+}
+@media (max-width: 480px) {
+  .team-card {
+    grid-column: span 6;
+  }
+  .team-card .image-item {
+    grid-column: span 3;
+  }
+}
+.image-item img {
+  min-width: 100%;
+  max-width: 100%;
+}
+
+.our-team {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.border-line {
+  margin-left: -5.5%;
+  margin-right: -5.5%;
+  border: none; /* Remove border to ensure only one line is visible */
+  border-top: 1px solid #CCC; /* Set the top border as the line */
+  padding-bottom: 50px;
+}
+
+/* END Meet the team */
 
 /*# sourceMappingURL=style.css.map */
