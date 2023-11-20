@@ -1,0 +1,42 @@
+.twelve-column-grid {
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+	gap: 3rem;
+	row-gap: 3rem;
+	padding-top: 2rem;
+  }
+
+  .team-card {
+	grid-column: span 2;
+  }
+
+  @media (max-width: 1200px) {
+	.team-card {
+	  grid-column: span 3;
+	}
+  }
+
+  @media (max-width: 768px) {
+	.team-card {
+	  grid-column: span 4;
+	}
+  }
+
+  @media (max-width: 480px) {
+	.team-card {
+	  grid-column: span 6;
+	}
+	
+	.team-card .image-item {
+	  grid-column: span 3;
+	}
+  }
+
+  .image-item img {
+	min-width: 100%;
+  }
+
+  .our-team {
+	padding-top: 4rem;
+	padding-bottom: 4rem;
+  }
