@@ -603,6 +603,11 @@ main {
     min-height: 100%;
   }
 }
+.map-image {
+  width: 100%;
+  padding-top: 30px;
+}
+
 #content {
   width: 100%;
   margin: 0 auto;
