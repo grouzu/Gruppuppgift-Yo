@@ -15,7 +15,7 @@
 
   /*Breakpoint for when menu can't fit the screen anymore*/
   @media screen and (max-width: 1190px) {
-    padding: 2%;
+    padding: 2% 0%;
     box-sizing: border-box;
     height: auto;
     position: fixed;
