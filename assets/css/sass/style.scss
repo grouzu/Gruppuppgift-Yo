@@ -52,12 +52,13 @@ main {
     margin: 0 0 20px;
     height: auto;
     min-height: 100%;
+    padding-top: 60px;
   }
 }
 
 .map-image {
-	width: 100%;
-	padding-top: 30px;
+  width: 100%;
+  padding-top: 30px;
 }
 
 #content {
@@ -73,14 +74,12 @@ main {
 }
 /*------FOOTER-----*/
 
-
 /*------HERO-----*/
 .hero-section img {
   width: 100%;
   margin-bottom: 40px;
 }
 /*------HERO-----*/
-
 
 .grid-12-whoweare {
   display: grid;
@@ -93,12 +92,10 @@ main {
   grid-column: span 4;
 }
 
-
 .our-story {
   padding-top: 50px;
   padding-bottom: 20px;
 }
-
 
 /*Get in touch section*/
 .Heading-get-in-touch {
@@ -125,14 +122,58 @@ main {
   grid-column: span 3;
 }
 
-.business-careers {
+.careers {
   grid-column: span 3;
+}
+
+.business {
+  grid-column: span 3;
+}
+
+@media (min-device-width: 375px) and (max-width: 667px) {
+  .Heading-get-in-touch {
+    padding-bottom: 10px;
+  }
+
+  .get-in-touch h2 {
+    padding-bottom: 10px;
+  }
+
+  .inquiries {
+    grid-column: span 12;
+    margin-bottom: 30px;
+  }
+
+  .business {
+    grid-column: span 12;
+    margin-bottom: 30px;
+  }
+
+  .careers {
+    grid-column: span 12;
+    margin-bottom: 30px;
+  }
+
+  .container--4 {
+    grid-column: span 12;
+    margin-bottom: 30px;
+  }
+
+  .our-story {
+    margin-top: -50px;
+    padding-bottom: 0px;
+  }
 }
 
 .socialmedia-icons {
   grid-column: 10 / span 3; /* Start from column 10 and span 3 columns */
   text-align: right;
-  grid-row: 1;
+}
+@media (min-device-width: 375px) and (max-width: 667px) {
+  .socialmedia-icons {
+    grid-column: span 12;
+    text-align: left;
+  }
 }
 
 /* Meet the team */
@@ -143,49 +184,49 @@ main {
   row-gap: 3rem;
   padding-top: 2rem;
   column-gap: 2rem;
-  }
- 
-  .team-card {
+}
+
+.team-card {
   grid-column: span 2;
-  }
- 
-  @media (max-width: 1200px) {
+}
+
+@media (max-width: 1200px) {
   .team-card {
     grid-column: span 3;
   }
-  }
- 
-  @media (max-width: 768px) {
+}
+
+@media (max-width: 768px) {
   .team-card {
     grid-column: span 4;
   }
-  }
- 
-  @media (max-width: 480px) {
+}
+
+@media (max-width: 480px) {
   .team-card {
     grid-column: span 6;
   }
- 
+
   .team-card .image-item {
     grid-column: span 3;
   }
-  }
- 
-  .image-item img{
+}
+
+.image-item img {
   min-width: 100%;
   max-width: 100%;
-  }
- 
-  .our-team {
+}
+
+.our-team {
   padding-top: 4rem;
   padding-bottom: 4rem;
-  }
+}
 
-  .border-line {
-    margin-left: -5.5%;
-    margin-right: -5.5%;
-    border: none; /* Remove border to ensure only one line is visible */
-    border-top: 1px solid $light-grey; /* Set the top border as the line */
-    padding-bottom: 50px;
-  }
-  /* END Meet the team */
+.border-line {
+  margin-left: -5.5%;
+  margin-right: -5.5%;
+  border: none; /* Remove border to ensure only one line is visible */
+  border-top: 1px solid $light-grey; /* Set the top border as the line */
+  padding-bottom: 50px;
+}
+/* END Meet the team */

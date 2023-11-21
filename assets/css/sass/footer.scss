@@ -1,38 +1,54 @@
 footer {
-    margin-top: 50px;
-    border-top: 1px solid $light-grey;
+  margin-top: 50px;
+  border-top: 1px solid $light-grey;
 
-  
-    h2 {
-      padding-bottom: 15px;
-      font-weight: 700;
-    }
-  
-    p {
-      margin: 2% 0% 2% 0%;
-    }
-  
-    a {
-      text-decoration: none;
-    }
+  h2 {
+    padding-bottom: 15px;
+    font-weight: 700;
+  }
+
+  p {
+    margin: 2% 0% 2% 0%;
+  }
+
+  a {
+    text-decoration: none;
+  }
 }
 
 .grid-12 {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    padding: 50px 10px 50px 10px;
-    margin: 0% 5% 0% 5%;
-  }
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  padding: 50px 10px 50px 10px;
+  margin: 0% 5% 0% 5%;
+}
 
+.container-2 {
+  grid-column: span 2;
+}
+
+.container-3 {
+  grid-column: span 3;
+}
+
+.container-4 {
+  grid-column: 10 / span 3; /* Start from column 10 and span 3 columns */
+  text-align: right;
+}
+
+@media (min-device-width: 375px) and (max-width: 667px) {
   .container-2 {
-    grid-column: span 2;
+    grid-column: span 12;
+    margin-bottom: 30px;
   }
 
   .container-3 {
-    grid-column: span 3;
+    grid-column: span 12;
+    margin-bottom: 30px;
   }
 
   .container-4 {
-     grid-column: 10 / span 3; /* Start from column 10 and span 3 columns */
-     text-align: right;
-    }
+    grid-column: span 12;
+    text-align: left;
+  }
+}
