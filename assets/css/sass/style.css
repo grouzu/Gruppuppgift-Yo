@@ -192,7 +192,7 @@ a:hover, a:active {
 }
 @media screen and (max-width: 1190px) {
   #header {
-    padding: 2%;
+    padding: 2% 0%;
     box-sizing: border-box;
     height: auto;
     position: fixed;
