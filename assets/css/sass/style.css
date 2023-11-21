@@ -208,7 +208,6 @@ a:hover, a:active, a:visited {
   overflow: hidden;
   background: white;
   display: block;
-  margin-left: -5.5%;
   padding-top: 10px;
   position: fixed;
   top: 0;
@@ -236,12 +235,9 @@ a:hover, a:active, a:visited {
   line-height: 40px;
   line-height: 2.5rem;
   margin-bottom: 5px;
-  margin-left: 5%;
 }
 #header nav#menu {
   display: block;
-  margin-left: 5%;
-  margin-right: 5%;
   border-bottom: 1px solid #CCC;
   border-top: 1px solid #CCC;
   padding-left: 5%;
