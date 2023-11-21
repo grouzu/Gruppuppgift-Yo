@@ -1,6 +1,7 @@
 /*! TYPOGRAPHY  */
 
 $primary-font: "Playfair Display", serif;
+$primary-font-color: #737373;
 $secondary-font: "Open Sans", sans-serif;
 
 /* --- Convert percent font sizes to em ---*/
@@ -74,6 +75,16 @@ h2 {
   font: {
     family: $primary-font;
     weight: normal;
+    color: black;
+  }
+  @include size(25, 25);
+}
+
+h3 {
+  font: {
+    family: $primary-font;
+    weight: bold;
+    color: black;
   }
   @include size(20, 25);
 }
@@ -101,9 +112,3 @@ a {
   margin-bottom: -0.75rem;
 }
 
-.h2-bold {
-  font: {
-    family: $primary-font;
-    weight: 800;
-  }
-}
